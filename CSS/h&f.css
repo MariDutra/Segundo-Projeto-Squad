@@ -13,9 +13,6 @@ header{
     align-items: center;
     padding-top: 20px;
 }
-body{
-    background-color:rgb(207, 232, 255);
-}
 h1{
     color: white;
 }
@@ -23,7 +20,7 @@ ul{
     display: flex;
     padding: 0;
     gap: 25px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     list-style: none;
 }
 a{
