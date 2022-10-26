@@ -1,8 +1,6 @@
 :root{
-    --roxo: #5C25FA;
+    --roxo: #584ff5;
     --laranja: #ff851b;
-    
-    
 }
 #section1{
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.68) 0%, rgba(255,255,255,0) 100%), url(../img/woman-3597095_1920.jpg);
@@ -19,7 +17,7 @@
     height: 60%;
     max-width:900px;
     color: rgb(255, 255, 255);
-    margin: 50px auto;
+    margin: 60px auto;
     padding-inline: 6px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.355);
@@ -42,6 +40,10 @@
     border: none;
     background-color: var(--roxo);
     color: white;
+    transition: .4s
+}
+#intro button:hover{
+    background-color: #392fff;
 }
 #wrapper{
     margin-block: 50px;
@@ -87,13 +89,21 @@
 }
 @media (min-width: 900px){
     #intro{
-        border-radius: 10px;
+        border-radius: 20px;
+        margin: 100px auto;
     }
 }
 @media (min-width: 1220px){
     #intro, #chamadaEspera p{
         font-size: 1.3rem;
 
+    }
+    #intro div p{
+        font-size: 1.4rem;
+    }
+    #intro div p span{
+        font-weight: 700;
+        text-transform: uppercase;
     }
     #intro h2, #chamadaEspera h3{
         font-size: 3rem;
