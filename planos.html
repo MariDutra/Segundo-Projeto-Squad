@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/planos.css">
-    <link rel="stylesheet" href="CSS/h&f.css">
     <title>Assine Agora!</title>
 </head>
 <body>
@@ -21,15 +20,6 @@
             </ul>
         </nav>
     </header>
-    <div id="abaCarrinho">
-        <button id="btnFechar">X</button>
-        <h1>Carrinho</h1>
-        <ul id="carrinho">
-            <li class="preçoCarrinho">O seu carrinho está vazio</li>
-        </ul>
-        <button id="finalizarCompra" >Finalizar compra</button>
-        <button id="limparCarrinho"> Excluir todos os itens</button>
-    </div>
    
     <main>
 
@@ -37,64 +27,70 @@
         <h2 class="sub-destaq">O seu próximo passo se inicia agora.
         </h2>
 
-        <!-- O article foi feito para englobar todos os 'cards' d0 plano e centralizar todos juntos -->
-        <article class="planos-pagamento">
+        <!-- A div foi feito para englobar todos os 'cards' d0 plano e centralizar todos juntos -->
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                 
+          
+                                    <!-- div 1 feita para o primeiro curso -->
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                  <h3 class="planos-pagamento_nome">Plus</h3>
+                                </div>
+                                <div class="card-body">
+                                   <h4 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">U$22,90 </font></font><small class="text-muted fw-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/mês</font></font></small></h4>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                       <li>
+                                            <span>✔</span>Mais de 5.000 códigos atualizados, com novos lançamentos todas as semanas, em <strong>Programação,
+                                            Front-end, Back-end, JavaScript e CSS</strong>!
+                                       </li>
+                                        <li>
+                                          <span>✔</span>É tudo on-line e sem burocracia.
+                                        </li>
+                                        <li>
+                                            <span>✔</span>Suporte por e-mail prioritário
+                                                  Acesso à central de ajuda.
+                                        </li>
+                                       <button type="button" class="btn btn-outline-info">Contate-nos</button>
+                                    </ul>
+                    
+                                </div>
+                            </div>
+                        </div>
+         
 
-            <!-- Section 1 feita para o primeiro curso -->
-            <section id="plano1" class="plano1">
+               
+                
 
-                <h3 class="planos-pagamento_nome">Plus</h3>
-                <p>Em até 12x sem juros de
-                    <br>
-                    <span class="preco">R$22,90</span>
-                </p>
-                <div>
-                    <ul>
-                        <li>
-                            <span>✔</span>Mais de 5.000 códigos atualizados, com novos lançamentos todas as semanas, em <strong>Programação,
-                                Front-end, Back-end, JavaScript e CSS</strong>!
-                        </li>
-                        <li>
-                            <span>✔</span>É tudo on-line e sem burocracia
-                        </li>
-                      
-                    </ul>
-                </div>
-                <button id="btn1">Assinar </button>
-            </section>
-
-            <!-- Section 2 feita para o segundo curso -->
-            <section id="plano2" class="plano2">
-                <h2>Premium Plus Anual</h2>
-                <p>
-                    <br>
-                    <span class="preco">
-                   R$99,90 </span>
-                </p>
-                <div>
-                    <ul>
-                        <li>
-                            <span>✔</span>Milhares de opções de cursos Sem Juros
-                        </li>
-                        <li>
-                            <span>✔</span>Professores online com metodologia própria e foco em atração
-                        </li>
-                        <li>
-                            <span>✔</span> Resolução de CodeWars
-                        </li>
-                        <li>
-                            <span>✔</span>
-                        </li>
-                        <li>
-                            <span>✔</span>
-                        </li>
-                    </ul>
-                </div>
-                <button id="btn2">Assinar</button>
-            </section>
-
-           
-       
+                                                 <!-- div 2 feita para o segundo curso -->
+                                <div class="col">
+                                   <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                                        <div class="card-header py-3 text-bg-primary border-primary" id="plano2" class="plano2">
+                                          <h2>Premium Plus Anual</h2>
+                                        </div>
+                                        <div class="card-body">
+                                           <h1 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> U$99,90 </font></font></h1>
+                                            <ul class="list-unstyled mt-3 mb-4">
+                                                <li>
+                                                 <span>✔</span>Milhares de opções de cursos Sem Juros.
+                                                </li>
+                                                <li>
+                                                  <span>✔</span>Professores online com metodologia própria e foco em atração.
+                                                </li>
+                                                <li>
+                                                  <span>✔</span>Suporte por telefone e e-mail
+                                                   Acesso à central de ajuda.
+                                                </li>
+                        
+                                            </ul>
+                                            <button type="button" class="btn btn-primary btn-lg">Contate-nos</button>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
     </main>
     
     <footer>
