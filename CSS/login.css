@@ -14,6 +14,7 @@
 main{
     height: 80vh;
     background: var(--roxo);
+    background-image: url(https://media.tenor.com/crNkPq4HPNgAAAAC/blue-code.gif)
 }
 
 #login{
