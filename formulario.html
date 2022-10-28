@@ -28,77 +28,98 @@
             <div class="header">
                 <h2>criar conta</h2>
             </div>
-        
-            <form class="form" id="form">
                 
+            <form class="form" id="form">
+                        
                 <div class="form-control" >
                     <label for="username"> Nome </label>
                     <input type="username" id="username">
-                    <i><img class="img-success" src="./IMG/success-icon.svg" alt=""></i>
-                    <i><img class="img-error" src="./IMG/error-icon.svg" alt=""></i>
-        
-                    <Small>Error messagem</Small>
                 </div>
-        
+                
                 <div class="form-control">
                     <label for="email"> Email </label>
                     <input type="email" id="email">
-                    <i><img class="img-success" src="./IMG/success-icon.svg" alt=""></i>
-                    <i><img class="img-error" src="./IMG/error-icon.svg" alt=""></i>
-        
-                    <Small>Error messagem</Small>
                 </div>
-        
+                
                 <div class="form-control">
                     <label for="password"> Senha </label>
                     <input type="password" id="password">
-                    <i><img class="img-success" src="./IMG/success-icon.svg" alt=""></i>
-                    <i><img class="img-error" src="./IMG/error-icon.svg" alt=""></i>
-        
-                    <Small>Error messagem</Small>
                 </div>
-        
+                
                 <div class="form-control">
                     <label for="passwordtwo"> Confirme sua senha </label>
                     <input type="password" id="passwordtwo">
-                    <i><img class="img-success" src="./IMG/success-icon.svg" alt=""></i>
-                    <i><img class="img-error" src="./IMG/error-icon.svg" alt=""></i>
-        
-                    <Small>Error messagem</Small>
                 </div>
-        
+                
                 <div class="form-control">
                     <label for="RG"> RG </label>
                     <input type="RG" id="RG">
-                    <i><img class="img-success" src="./IMG/success-icon.svg" alt=""></i>
-                    <i><img class="img-error" src="./IMG/error-icon.svg" alt=""></i>
-        
-                    <Small>Error messagem</Small>
                 </div>
-        
-                <div class="form-control">
-                    <label for="CEP"> CEP </label>
-                    <input type="CEP" id="CEP">
-                    <i><img class="img-success" src="./IMG/success-icon.svg" alt=""></i>
-                    <i><img class="img-error" src="./IMG/error-icon.svg" alt=""></i>
-        
-                    <Small>Error messagem</Small>
-                </div>
-        
-                <button type="submit"> ENVIAR </button>
+                
+                    <button type="submit"> ENVIAR </button>
             </form>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <h2>criar conta</h2>
+            </div>
+        
+            <form class="formCep" method="get" action=".">
+                    <div class="form-control">
+                        <label>Cep:
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                           onblur="pesquisacep(this.value);" /></label><br />
+                    </div>
+                    <label>Rua:
+                    <input name="rua" type="text" id="rua" size="60" /></label><br />
+                    <label>Bairro:
+                    <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+                    <label>Cidade:
+                    <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+                    <label>Estado:
+                    <input name="uf" type="text" id="uf" size="2" /></label><br />
+                    <label>IBGE:
+                    <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+
+                    <button type="submit"> ENVIAR </button>
+                  </form>
         </div>
         
     </main>
 
     <footer>
         <div>
-            <img src="./img/logotipo-do-instagram.png" alt="">
-            <img src="./img/simbolo-de-aplicativo-do-facebook.png" alt="">
-            <img src="./img/twitter.png" alt="">
+            <div>
+                <ul>
+                    <h3>Navegação</h3>
+                    <a href="#"><li>Página inicial</li></a>
+                    <a href="#"><li>Planos</li></a>
+                    <a href="#"><li>Formulário</li></a>
+                    <a href="#"><li>Contato</li></a>
+                    <a href="#"><li>Entrar</li></a>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h3>Outros</h3>
+                    <a href="#"><li>Política de Privacidade</li></a>
+                    <a href="#"><li>Política de reembolso</li></a>
+                    <a href="#"><li>Trabalhe conosco</li></a>
+                    <a href="#"><li>Termos e condições</li></a>
+                </ul>
+            </div>
+        </div>
+        <div id="redesSociais">
+            <h3>Redes sociais</h3>
+            <div>
+                <img src="./img/logotipo-do-instagram.png" alt="">
+                <img src="./img/simbolo-de-aplicativo-do-facebook.png" alt="">
+                <img src="./img/twitter.png" alt="">
+            </div>
         </div>
     </footer>
-
+    <script src="./scripts/cep.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
