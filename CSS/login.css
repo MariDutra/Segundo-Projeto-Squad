@@ -13,11 +13,11 @@
 
 main{
     height: 80vh;
-    background: linear-gradient(0deg, rgba(88,79,245,1) 23%, rgba(255,255,255,1) 100%);
+    background: var(--roxo);
 }
 
 #login{
-    background-color: none
+    background-color: white;
 }
 .wrapper {
     position: absolute;
@@ -35,7 +35,7 @@ main{
 .wrapper header {
     font-size: 35px;
     font-weight: 600;
-    color: #5372F0
+    color: var(--roxo);
 }
 
 .wrapper form {
@@ -79,7 +79,7 @@ form input {
     padding: 0 45px;
     font-size: 18px;
     background: none;
-    caret-color: #5372F0;
+    caret-color: var(--roxo);
     border-radius: 5px;
     border: 1px solid var(--laranja);
     border-bottom-width: 2px;
