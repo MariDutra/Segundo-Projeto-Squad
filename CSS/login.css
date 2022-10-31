@@ -1,6 +1,4 @@
 
-/*parte login*/
-
 :root{
     --roxo: #584ff5;
     --laranja: #ff851b;
@@ -8,7 +6,6 @@
 
 ::selection {
     color: #fff;
-   
 }
 
 main{
@@ -20,6 +17,7 @@ main{
 #login{
     background-color: white;
 }
+
 .wrapper {
     position: absolute;
     top: 50%;
@@ -82,7 +80,7 @@ form input {
     background: none;
     caret-color: var(--roxo);
     border-radius: 5px;
-    border: 1px solid var(--laranja);
+    border: 1px solid var(--roxo);
     border-bottom-width: 2px;
     transition: all 0.2s ease;
 }
@@ -94,7 +92,7 @@ form .field.valid input {
 
 form .field.shake input,
 form .field.error input {
-    border-color: violet;
+    border-color: var(--laranja);
 }
 
 .field .input-area i {
