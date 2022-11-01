@@ -1,23 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+main h2{
+    text-align: center;
+    
 }
-
-header{
+#wrapper{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-    align-items: center;
-    padding-top: 20px;
+    gap: 20px;
+    
+    padding-block: 60px
 }
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.487);
-    height: 30vh;
+#plano1, #plano2{
+    text-align: center;
+    padding-inline: 30px;
+    background-color: antiquewhite;
+}
+li{
+    list-style: none;
+}
+li span{
+    color: rgb(0, 255, 0);
+}
+
+@media (min-width: 1100px){
+    #wrapper{
+        flex-direction: row;
+    }
+    #plano1, #plano2{
+        width: 50%;
+        height: 360px;
+    }
 }
