@@ -13,6 +13,9 @@ main{
     background: var(--roxo);
     background-image: url(https://media.tenor.com/crNkPq4HPNgAAAAC/blue-code.gif)
 }
+body section{
+    background-image: url(https://media.tenor.com/crNkPq4HPNgAAAAC/blue-code.gif)
+}
 
 #login{
     background-color: white;
