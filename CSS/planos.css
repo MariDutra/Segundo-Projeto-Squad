@@ -15,7 +15,17 @@ main h2{
 #plano1, #plano2{
     text-align: center;
     padding-inline: 30px;
-    background-color: antiquewhite;
+    background-color: rgb(109, 111, 214);
+    justify-content: space-around; display: flex;
+    flex-direction: column;
+}
+#plano3{
+    text-align: center;
+    padding-inline: 30px;
+    background-color: rgb(30, 33, 233);
+    justify-content: space-around; display: flex;
+    flex-direction: column;
+
 }
 li{
     list-style: none;
@@ -28,8 +38,15 @@ li span{
     #wrapper{
         flex-direction: row;
     }
-    #plano1, #plano2{
+    #plano1, #plano2, #plano3{
         width: 50%;
         height: 360px;
     }
 }
+td{
+    color: blue;
+}
+footer{
+    background-color: black;
+}
+
