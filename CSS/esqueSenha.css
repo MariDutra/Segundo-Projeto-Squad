@@ -22,10 +22,11 @@ main{
   height: 80vh;
   background: var(--roxo);
   background-image: url(https://media.tenor.com/crNkPq4HPNgAAAAC/blue-code.gif);
-  padding-block: 100px;
 }
-
-h1{
+section{
+  padding-block: 100px
+}
+h2{
   color: white;
   font-size: 2em;
   text-transform: uppercase;
