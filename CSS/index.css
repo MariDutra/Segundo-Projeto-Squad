@@ -42,6 +42,9 @@
     color: white;
     transition: .4s
 }
+#intro a{
+    width: 100%
+}
 #intro button:hover{
     background-color: #392fff;
 }
